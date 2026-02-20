@@ -1,0 +1,50 @@
+/* @media (min-width: 1024px) {
+  .wp-admin .editor-only > div {
+    width: calc(33.3333% - 24px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .wp-admin .editor-only > div {
+    width: calc(25% - 24px);
+  }
+} */
+
+@media (min-width: 1024px) {
+  .wp-admin .editor-only > div {
+    width: calc(25% - 24px);
+  }
+}
+
+.parent-element {
+  display: grid;
+  grid-template-rows: 1fr auto; /* Adjust as needed */
+  gap: 0; /* Remove any default gap */
+}
+
+.transformed-element {
+  /* Remove the negative translateY */
+  transform: translateY(0); /* or remove the transform property entirely*/
+  /* Use margin-top to push the content up */
+  margin-top: -5rem; /* Match the -translate-y value */
+}
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .transformed-element {
+    margin-top: -18rem;
+  }
+}
+
+@media (min-width: 1680px) {
+  /* 2xl breakpoint */
+  .transformed-element {
+    margin-top: -22rem;
+  }
+}
+
+.content-below {
+  /* A class for the content below the transformed element */
+  /* Add any necessary top margin to separate from the transformed content */
+  margin-top: 6rem; /* Match the original -translate-y value */
+}

@@ -1,0 +1,4 @@
+.wp-admin .form-col.editor-only {
+  display: none;
+  visibility: hidden;
+}

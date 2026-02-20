@@ -1,0 +1,373 @@
+{
+    "key": "group_679d39cea7b73",
+    "title": "SETTINGS: Pricing Set",
+    "fields": [
+        {
+            "key": "field_679d41c1afee5",
+            "label": "Custom Pricing Set Settings",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_679d4098639d5",
+            "label": "Custom price?",
+            "name": "custom_price_toggle",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "When a service requires a quote.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "allow_in_bindings": 0,
+            "ui_on_text": "On",
+            "ui_off_text": "Off",
+            "ui": 1
+        },
+        {
+            "key": "field_67a2787b574a8",
+            "label": "Custom Price Contact",
+            "name": "custom_price_contact",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "This should be 'Contact Us.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_679d4098639d5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_679d41d0afee6",
+            "label": "Custom End",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_679d4233c37f0",
+            "label": "Pricing Set Details",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_679d4098639d5",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The details below are the default way to add pricing details. These can be toggled off if the pricing set's price is quote related. This can be accomplished in the settings above: <b>Custom Pricing Set Settings<\/b>.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_679d3a49fc6b9",
+            "label": "Price Prepend",
+            "name": "price_prepend",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Toggle on or off.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_679d4098639d5",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "On",
+            "ui_off_text": "Off",
+            "ui": 1
+        },
+        {
+            "key": "field_679d3bd4bc35d",
+            "label": "Price Prepend Content",
+            "name": "price_prepend_content",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Max 20 characters.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_679d4098639d5",
+                        "operator": "!=",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_679d3a49fc6b9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": 20,
+            "allow_in_bindings": 0,
+            "placeholder": "Starting at",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_679d3c49bc35e",
+            "label": "Prepend Off",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_679d4098639d5",
+                        "operator": "!=",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_679d3a49fc6b9",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "Prepend content is off.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_679d39e1fc6b8",
+            "label": "Price",
+            "name": "price",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Only accepts numbers.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_679d4098639d5",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "step": 1,
+            "prepend": "$",
+            "append": ".00"
+        },
+        {
+            "key": "field_679d3cd526460",
+            "label": "Price Append Content",
+            "name": "price_append_content",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Max 20 characters.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_679d4098639d5",
+                        "operator": "!=",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_679d3cd12645f",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": 20,
+            "allow_in_bindings": 0,
+            "placeholder": "for full guide",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_679d3cd726461",
+            "label": "Append Off",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_679d4098639d5",
+                        "operator": "!=",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_679d3cd12645f",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "Append content is off.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_679d3cd12645f",
+            "label": "Price Append",
+            "name": "price_append",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Toggle on or off.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_679d4098639d5",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "On",
+            "ui_off_text": "Off",
+            "ui": 1
+        },
+        {
+            "key": "field_679d3ace0be68",
+            "label": "Pricing Details",
+            "name": "pricing_details",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Use this editor to add Pricing Set details in a list format.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "pricing-set"
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1738702055
+}

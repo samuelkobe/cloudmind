@@ -1,0 +1,83 @@
+nav > div > div > div > ul > li > a,
+.footer-menu-styles > li > a,
+.contact-anchors,
+.testimonials-anchors > h3 {
+  @apply border-b-2 border-solid border-b-dark border-opacity-0 transform transition-all duration-300;
+}
+
+nav > div > div > div > ul > li.active > a,
+.footer-menu-styles > li.active > a {
+  @apply border-b-2 border-solid border-opacity-100;
+}
+
+nav > div > div > div > ul > li > a:hover,
+.footer-menu-styles > li > a:hover,
+.contact-anchors:hover,
+.testimonials-anchors > h3:hover {
+  @apply border-b-2 border-solid border-opacity-100 transform transition-all duration-300;
+}
+
+nav > div > div > div > ul > li.active,
+.footer-menu-styles > li.active {
+  @apply pointer-events-none;
+}
+
+nav > div > div > div > ul > li.active[aria-haspopup="true"] {
+  @apply pointer-events-auto;
+}
+
+nav > div > div > div > ul > li[aria-haspopup="true"] {
+  @apply relative;
+}
+
+nav > div > div > div > ul > li.active > .a:hover,
+.footer-menu-styles > li.active > .a:hover {
+  @apply border-b-2 border-solid border-opacity-100 transform transition-all duration-300;
+}
+
+/* THIS IS FOR SUBMENU FUNCTIONALITY */
+.plus-icon {
+  @apply cursor-pointer ml-1 select-none;
+}
+
+li[aria-expanded="false"],
+li[aria-expanded="true"] {
+  @apply relative;
+}
+
+li[aria-expanded="false"] .sub-menu,
+li[aria-expanded="true"] .sub-menu {
+  @apply min-w-full text-lg bg-transparent pt-4;
+}
+
+li[aria-expanded="false"] .sub-menu {
+  @apply block opacity-0 h-0 absolute z-10 pointer-events-none;
+}
+
+li[aria-expanded="true"] .sub-menu {
+  @apply block opacity-100 h-auto pointer-events-auto lg:absolute;
+}
+
+li[aria-expanded="false"] .sub-menu li,
+li[aria-expanded="true"] .sub-menu li {
+  @apply block py-[6px] px-3 lg:bg-white lg:border-r-2 lg:border-l-2 lg:border-solid lg:border-[#dfdfdf] no-underline w-fit min-w-full text-nowrap relative;
+}
+
+li[aria-expanded="false"] .sub-menu li a,
+li[aria-expanded="true"] .sub-menu li a {
+  @apply w-full inline-block;
+}
+
+li[aria-expanded="false"] .sub-menu li:first-child,
+li[aria-expanded="true"] .sub-menu li:first-child {
+  @apply border-dashed border-t-2 lg:border-solid border-t-[#dfdfdf] pt-4;
+}
+
+li[aria-expanded="false"] .sub-menu li:last-child,
+li[aria-expanded="true"] .sub-menu li:last-child {
+  @apply lg:border-b-2 lg:border-solid lg:border-b-[#dfdfdf] pb-4;
+}
+
+.plus-icon {
+  @apply text-base;
+}

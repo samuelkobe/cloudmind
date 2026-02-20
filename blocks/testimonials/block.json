@@ -1,0 +1,16 @@
+{
+  "name": "acf/testimonials",
+  "title": "Featured Testimonials",
+  "description": "A block for recent featured testimonials.",
+  "style": ["file:./testimonials.css"],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["testimonials", "layout", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "testimonials.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

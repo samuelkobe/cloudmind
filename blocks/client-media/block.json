@@ -1,0 +1,16 @@
+{
+  "name": "acf/client-media",
+  "title": "Client Media",
+  "description": "A block for Client Media.",
+  "style": ["file:./client-media.css"],
+  "category": "formatting",
+  "icon": "images-alt",
+  "keywords": ["Client Media", "layout", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "client-media.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

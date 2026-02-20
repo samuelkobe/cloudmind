@@ -1,0 +1,16 @@
+{
+  "name": "acf/gallery",
+  "title": "Gallery",
+  "description": "A block for simple image gallery.",
+  "style": ["file:./gallery.css"],
+  "category": "formatting",
+  "icon": "format-gallery",
+  "keywords": ["gallery", "images", "slideshow", "carousel", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "gallery.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

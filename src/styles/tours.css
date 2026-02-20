@@ -1,0 +1,3 @@
+[id^="details_"] svg {
+  @apply w-12 h-12 xl:w-16 xl:h-16 aspect-square;
+}

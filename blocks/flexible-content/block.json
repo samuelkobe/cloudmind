@@ -1,0 +1,26 @@
+{
+  "name": "acf/flexible-content",
+  "title": "Flexible Content",
+  "description": "A block for adding Flexible Content. This can be an arrangement of text, images, or looping videos in one or two columns.",
+  "style": ["file:./flexible-content.css"],
+  "category": "formatting",
+  "icon": "columns",
+  "keywords": [
+    "flexible content",
+    "50/50",
+    "fifty fifty",
+    "image",
+    "heading",
+    "text",
+    "video",
+    "layout",
+    "webok"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "flexible-content.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

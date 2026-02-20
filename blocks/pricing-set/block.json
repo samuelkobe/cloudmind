@@ -1,0 +1,16 @@
+{
+  "name": "acf/pricing-set",
+  "title": "Pricing Set",
+  "description": "A block for adding a pricing set.",
+  "style": ["file:./pricing-set.css"],
+  "category": "formatting",
+  "icon": "money-alt",
+  "keywords": ["Pricing", "Pricing Set", "layout", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "pricing-set.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

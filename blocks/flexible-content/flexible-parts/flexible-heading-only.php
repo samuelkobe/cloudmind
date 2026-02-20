@@ -1,0 +1,1 @@
+<h2 class="font-medium text-3xl lg:text-[40px] lg:leading-tight <?php echo $heading_colour;?>"><?php echo get_sub_field( 'heading' ); ?></h2>

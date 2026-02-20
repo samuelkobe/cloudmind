@@ -1,0 +1,55 @@
+{
+    "key": "group_6760979e68a7c",
+    "title": "VAR: Colours",
+    "fields": [
+        {
+            "key": "field_676097d1d54b4",
+            "label": "Colour Settings",
+            "name": "block_colour_settings",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "white": "<span style=\"color: #201910; padding: 2px; background-color: #FFFFFF; font-weight: bold;\">White<\/span>",
+                "off-white": "<span style=\"color: #201910; padding: 2px; background-color: #EFEFEF; font-weight: bold;\">Light<\/span>",
+                "main": "<span style=\"color: #201910; padding: 2px; background-color: #d3a852; font-weight: bold;\">Main<\/span>",
+                "secondary": "<span style=\"color: #201910;  padding: 2px; background-color: #DFDFDF; font-weight: bold;\">Secondary<\/span>",
+                "tertiary": "<span style=\"color: #201910; padding: 2px; background-color: #bcc6ee; font-weight: bold;\">Tertiary<\/span>",
+                "dark": "<span style=\"color: #FFFFFF; fo padding: 2px; background-color: #1D1E24; font-weight: bold;\">Dark<\/span>"
+            },
+            "default_value": "off-white",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "allow_in_bindings": 1,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "!=",
+                "value": "theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 200,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1740874461
+}

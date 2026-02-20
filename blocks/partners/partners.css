@@ -1,0 +1,17 @@
+.wp-admin .editor-disable {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 24px !important;
+}
+
+.wp-admin .editor-disable:after {
+  content: "The carousel is not displayed in the WordPress editor to save resources. This is expected behavior, You may still add, remove, and edit this block and its content by clicking on the block here." !important;
+  @apply z-[9999] inline-block text-white text-xl bg-tertiary-vivid #{!important};
+}
+
+.wp-admin .editor-disable div {
+  display: none !important;
+  position: relative !important;
+}

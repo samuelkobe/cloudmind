@@ -1,0 +1,248 @@
+/*
+Theme Name: CloudMind
+Theme URI: https://www.webok.ca/projects
+Description: A WP theme by Web Ok Solutions Inc. Customized for the exclusive use by CloudMind.
+Version: 0.0.1
+Author: Web Ok Solution Inc.
+Author URI: https://webok.ca
+Tags: block-theme
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/lgpl-3.0.html
+Tested up to: 6.6.1
+Text Domain: web-ok-solutuions-theme--cloud-mind
+Requires PHP: 8.2.0 or higher
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add global styles to this file, and also import other style files */
+/* bg-off-white */
+
+/* Global Styles */
+body {
+  @apply font-main bg-white text-dark;
+}
+
+body .editor-styles-wrapper {
+  @apply font-main;
+}
+
+.editor-styles-wrapper a {
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+a p,
+a span,
+a,
+dd {
+  @apply selection:bg-main-vivid selection:text-dark;
+}
+
+/* Fonts */
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100..900;1,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap");
+
+/* Headings */
+.heading-one {
+  @apply font-sans font-semibold uppercase text-3xl xl:text-6xl tracking-widest;
+}
+.content {
+  @apply font-main font-normal text-sm xl:text-lg leading-[4rem];
+}
+
+.content.large {
+  @apply text-base xl:text-2xl;
+}
+
+.content {
+  @apply leading-relaxed xl:leading-[48px] #{!important};
+}
+
+/* Pagination styles */
+.pagination {
+  @apply flex items-center justify-center space-x-2;
+}
+
+.pagination .page-numbers {
+  @apply bg-white w-10 h-10 lg:w-12 lg:h-12 mt-12 lg:mt-36 2xl:mt-44 flex items-center justify-center;
+}
+
+.pagination .page-numbers.current {
+  @apply font-bold bg-main text-white;
+}
+
+.pagination .next.page-numbers,
+.pagination .prev.page-numbers {
+  @apply bg-[#ffffff] w-fit text-sm lg:text-xl;
+}
+
+/* WYSIWYG extra styles */
+.wysiwyg {
+  @apply text-base;
+}
+.wysiwyg.wysiwyg-small {
+  @apply text-sm lg:text-base font-normal;
+}
+
+.wysiwyg p {
+  @apply font-main font-medium antialiased mb-2 xl:mb-4;
+}
+
+.wysiwyg a {
+  @apply text-main border-b-2 border-main font-sans font-semibold antialiased lowercase hover:text-main-vivid hover:border-main-vivid transition-colors duration-300;
+}
+
+.wysiwyg strong {
+  @apply font-bold antialiased;
+}
+
+.wysiwyg ul {
+  @apply list-disc list-outside pl-4;
+}
+
+.wysiwyg ol {
+  @apply list-decimal list-outside;
+}
+
+.wysiwyg li {
+  @apply mb-2 xl:mb-4;
+}
+
+.wysiwyg ul ul,
+.wysiwyg ol ol {
+  @apply list-[circle] list-outside indent-6;
+}
+
+.wysiwyg blockquote {
+  @apply pl-4 border-l-8 py-2 xl:py-4 border-main indent-4 font-sans font-semibold uppercase text-lg xl:text-3xl mb-2 xl:mb-4;
+}
+
+.wysiwyg blockquote p {
+  @apply mb-0;
+}
+
+.wysiwyg h1,
+.wysiwyg h2,
+.wysiwyg h3,
+.wysiwyg h4,
+.wysiwyg h5,
+.wysiwyg h6 {
+  @apply font-sans font-semibold uppercase tracking-wide;
+}
+
+.wysiwyg h1 {
+  @apply text-2xl xl:text-5xl;
+}
+
+.wysiwyg h2 {
+  @apply text-xl xl:text-4xl;
+}
+
+.wysiwyg h3 {
+  @apply text-lg xl:text-3xl;
+}
+
+.wysiwyg h4 {
+  @apply text-base xl:text-2xl;
+}
+
+.wysiwyg h5 {
+  @apply text-sm xl:text-xl;
+}
+
+.wysiwyg h6 {
+  @apply text-xs xl:text-lg;
+}
+
+/* Buttons */
+@layer components {
+  .btn {
+    @apply font-normal 2xl:font-medium font-sans tracking-wider text-white flex w-fit text-lg 2xl:text-xl bg-dark hover:bg-white hover:border-dark hover:text-black border-2 lg:border-[3px] border-dark py-3 2xl:py-4 px-8 md:px-12 2xl:px-16 cursor-pointer transition-colors duration-300;
+  }
+
+  .btn.small {
+    @apply text-base xl:text-lg py-[2px] xl:py-1 px-2 xl:px-4 !border-none outline-2 outline-dark outline;
+  }
+
+  .btn.menu {
+    @apply text-base xl:text-xl py-1 md:py-3 2xl:py-4 px-4 md:px-12 2xl:px-16;
+  }
+
+  .btn.alt {
+    @apply text-white bg-transparent border-white hover:text-dark hover:bg-white hover:border-white no-underline #{!important};
+  }
+
+  /* .btn.tour-auxiliary {
+    @apply opacity-75 #{!important};
+  } */
+
+  /* .btn.alt-tour-main {
+    @apply text-[white] hover:text-[white] hover:shadow-xl hover:bg-main bg-transparent shadow-none border-white hover:border-main no-underline #{!important};
+  }
+
+  .btn.alt-tour-secondary {
+    @apply text-[white] hover:text-[white] hover:shadow-xl hover:bg-secondary bg-transparent shadow-none border-white hover:border-secondary no-underline #{!important};
+  }
+  .btn.alt-tour-tertiary {
+    @apply text-[white] hover:text-[white] hover:shadow-xl hover:bg-tertiary bg-transparent shadow-none border-white hover:border-tertiary no-underline #{!important};
+  }
+
+  .btn.alt-tour-quaternary {
+    @apply text-[white] hover:text-[white] hover:shadow-xl hover:bg-quaternary bg-transparent shadow-none border-white hover:border-quaternary no-underline #{!important};
+  } */
+
+  /* .btn.wide {
+    @apply w-[80%] sm:w-[60%] lg:w-full text-center flex items-center justify-center #{!important};
+  }
+
+  .btn.transparent {
+    @apply bg-white hover:bg-[#cccccc] border-white text-dark mix-blend-screen #{!important};
+  } */
+}
+/* Accessibility Styles */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}

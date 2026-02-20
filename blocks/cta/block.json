@@ -1,0 +1,16 @@
+{
+  "name": "acf/cta",
+  "title": "Call to Action",
+  "description": "A block for a call to action component. with multiple options.",
+  "style": ["file:./cta.css"],
+  "category": "formatting",
+  "icon": "align-wide",
+  "keywords": ["banner", "cta", "layout", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "cta.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

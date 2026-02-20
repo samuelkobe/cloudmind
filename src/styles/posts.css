@@ -1,0 +1,104 @@
+/* index.php styles */
+.sticky-post {
+  @apply bg-off-white;
+}
+
+/* single.php styles */
+body.single-post .wysiwyg p,
+.post-type-post .editor-styles-wrapper p {
+  @apply font-main font-medium text-base xl:text-lg antialiased mb-2 xl:mb-4;
+}
+
+body.single-post .wysiwyg h1,
+.post-type-post .editor-styles-wrapper h1,
+body.single-post .wysiwyg h2,
+.post-type-post .editor-styles-wrapper h2,
+body.single-post .wysiwyg h3,
+.post-type-post .editor-styles-wrapper h3,
+body.single-post .wysiwyg h4,
+.post-type-post .editor-styles-wrapper h4,
+body.single-post .wysiwyg h5,
+.post-type-post .editor-styles-wrapper h5,
+body.single-post .wysiwyg h6,
+.post-type-post .editor-styles-wrapper h6 {
+  @apply font-sans font-semibold uppercase text-main antialiased mb-2 xl:mb-4;
+}
+
+body.single-post .wysiwyg h1,
+.post-type-post .editor-styles-wrapper h1 {
+  @apply text-3xl xl:text-6xl tracking-widest;
+}
+
+body.single-post .wysiwyg h2,
+.post-type-post .editor-styles-wrapper h2 {
+  @apply text-2xl xl:text-5xl tracking-widest;
+}
+
+body.single-post .wysiwyg h3,
+.post-type-post .editor-styles-wrapper h3 {
+  @apply text-xl xl:text-4xl tracking-widest;
+}
+
+body.single-post .wysiwyg h4,
+.post-type-post .editor-styles-wrapper h4 {
+  @apply text-lg xl:text-3xl tracking-widest;
+}
+
+body.single-post .wysiwyg h5,
+.post-type-post .editor-styles-wrapper h5 {
+  @apply text-base xl:text-2xl tracking-widest;
+}
+
+body.single-post .wysiwyg h6,
+.post-type-post .editor-styles-wrapper h6 {
+  @apply text-sm xl:text-xl tracking-widest;
+}
+
+body.single-post .wysiwyg ul,
+.post-type-post .editor-styles-wrapper ul {
+  @apply list-disc ml-4 flex flex-col justify-center items-start;
+}
+
+body.single-post .wysiwyg ol,
+.post-type-post .editor-styles-wrapper ol {
+  @apply list-decimal ml-4;
+}
+
+body.single-post .wysiwyg ul ul,
+body.single-post .wysiwyg ol ol,
+.post-type-post .editor-styles-wrapper ul ul,
+.post-type-post .editor-styles-wrapper ol ol {
+  @apply list-[circle] list-inside indent-6;
+}
+
+body.single-post .wysiwyg strong,
+.post-type-post .editor-styles-wrapper strong {
+  @apply font-bold antialiased;
+}
+
+body.single-post .wysiwyg a {
+  @apply text-main border-b-2 border-main font-sans font-semibold antialiased lowercase hover:text-main-vivid hover:border-main-vivid transition-colors duration-300;
+}
+
+.post-type-post .editor-styles-wrapper a {
+  @apply text-main;
+}
+
+body.single-post .wysiwyg blockquote,
+.post-type-post .editor-styles-wrapper blockquote {
+  @apply pl-4 border-l-8 py-2 xl:py-4 border-main indent-4 font-sans font-semibold uppercase text-lg xl:text-3xl mb-2 xl:mb-4;
+}
+
+body.single-post .wysiwyg blockquote p,
+.post-type-post .editor-styles-wrapper blockquote p {
+  @apply mb-0;
+}
+
+body.single-post .wysiwyg .wp-block-columns,
+.post-type-post .editor-styles-wrapper .wp-block-columns {
+  @apply my-6 xl:my-12 #{!important};
+}
+
+.post-type-post .editor-styles-wrapper .wp-block-column {
+  @apply border-off-white border-2 border-solid p-4;
+}

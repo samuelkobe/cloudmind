@@ -1,0 +1,4 @@
+/* footer menu specific styles */
+.footer-menu-styles {
+  @apply flex flex-col gap-y-2;
+}

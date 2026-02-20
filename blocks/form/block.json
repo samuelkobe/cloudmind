@@ -1,0 +1,16 @@
+{
+  "name": "acf/form",
+  "title": "Form",
+  "description": "A block for adding content and a main form",
+  "style": ["file:./form.css"],
+  "category": "formatting",
+  "icon": "text",
+  "keywords": ["form", "contact", "submit", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "form.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

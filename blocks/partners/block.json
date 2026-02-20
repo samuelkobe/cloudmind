@@ -1,0 +1,16 @@
+{
+  "name": "acf/partners",
+  "title": "Partners",
+  "description": "A block for a looping through a list of partners",
+  "style": ["file:./partners.css"],
+  "category": "formatting",
+  "icon": "networking",
+  "keywords": ["scroll", "carousel", "partners", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "partners.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

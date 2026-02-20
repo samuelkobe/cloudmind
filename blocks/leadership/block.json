@@ -1,0 +1,16 @@
+{
+  "name": "acf/leadership",
+  "title": "Leadership",
+  "description": "A block for all Featured Leadership.",
+  "style": ["file:./leadership.css"],
+  "category": "formatting",
+  "icon": "star-filled",
+  "keywords": ["Leadership", "layout", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "leadership.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

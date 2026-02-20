@@ -1,0 +1,16 @@
+{
+  "name": "acf/clusters",
+  "title": "Clusters",
+  "description": "A block for adding clustered title and content pairs.",
+  "style": ["file:./content-clusters.css"],
+  "category": "formatting",
+  "icon": "editor-insertmore",
+  "keywords": ["clusters", "content pairs", "layout", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "content-clusters.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

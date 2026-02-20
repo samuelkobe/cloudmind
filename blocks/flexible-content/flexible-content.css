@@ -1,0 +1,28 @@
+/* Styles so they appear in the CSS aspect-instagram aspect-tall aspect-square aspect-video aspect-portrait aspect-landscape */
+
+[data-flexible-col="left"] [data-media-padding="true"] {
+  padding-right: 0;
+}
+
+[data-flexible-col="right"] [data-media-padding="true"] {
+  padding-left: 0;
+}
+
+.flexible-content-wrapper[data-media-padding="true"] {
+  @media (max-width: 1023px) {
+    order: 0;
+  }
+}
+
+/* FAQs */
+.faq-item .faq-answer {
+  display: none;
+}
+
+.faq-item .faq-answer.active {
+  display: block;
+}
+
+.faq-item .faq-question .faq-toggle.active span.faq-tab {
+  rotate: 180deg;
+}

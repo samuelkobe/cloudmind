@@ -1,0 +1,5 @@
+@media (min-width: 1024px) {
+  .wp-admin .editor-only > div {
+    width: calc(33.3333% - 24px);
+  }
+}

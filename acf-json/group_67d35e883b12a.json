@@ -1,0 +1,71 @@
+{
+    "key": "group_67d35e883b12a",
+    "title": "SETTINGS: News & Media",
+    "fields": [
+        {
+            "key": "field_67d35e883d154",
+            "label": "Article Type?",
+            "name": "article_type_toggle",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Choose between Internal and External article type. External Posts will require a link.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "allow_in_bindings": 1,
+            "ui_on_text": "Internal",
+            "ui_off_text": "External",
+            "ui": 1
+        },
+        {
+            "key": "field_67d35ede0607f",
+            "label": "External Link",
+            "name": "external_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Add an external article link destination.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67d35e883d154",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1741905702
+}
