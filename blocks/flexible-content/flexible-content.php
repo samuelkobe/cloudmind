@@ -91,6 +91,13 @@ if ( ! empty( $block['align'] ) ) {
 			$content_colour = 'text-white';
 			$button_style = 'alt';
 			break;
+		case 'warm':
+			$background_colour = 'bg-warm';
+			$heading_colour = 'text-dark';
+			$subheading_colour = 'text-warm-text';
+			$content_colour = 'text-warm-text';
+			$button_style = '';
+			break;
 		case 'white':
 			$background_colour = 'bg-white';
 			$heading_colour = 'text-dark';

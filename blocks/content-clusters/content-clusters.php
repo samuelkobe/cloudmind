@@ -81,6 +81,12 @@ if ( ! empty( $block['align'] ) ) {
 			$subheading_colour = 'text-white';
 			$content_colour = 'text-white';
 			break;
+		case 'warm':
+			$background_colour = 'bg-warm';
+			$heading_colour = 'text-dark';
+			$subheading_colour = 'text-warm-text';
+			$content_colour = 'text-warm-text';
+			break;
 		case 'white':
 			$background_colour = 'bg-white';
 			$heading_colour = 'text-dark';

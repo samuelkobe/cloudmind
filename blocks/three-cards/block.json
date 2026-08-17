@@ -1,0 +1,16 @@
+{
+  "name": "acf/three-cards",
+  "title": "Three Cards",
+  "description": "A block with a heading, description, three icon cards, a sentence, and a call-to-action button.",
+  "style": ["file:./three-cards.css"],
+  "category": "formatting",
+  "icon": "columns",
+  "keywords": ["cards", "columns", "features", "three", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "three-cards.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

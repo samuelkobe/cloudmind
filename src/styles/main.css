@@ -186,6 +186,14 @@ dd {
     @apply text-white bg-transparent border-white hover:text-dark hover:bg-white hover:border-white no-underline #{!important};
   }
 
+  .btn.warm {
+    @apply text-white bg-warm-button border-warm-button hover:bg-dark hover:border-dark hover:text-white no-underline #{!important};
+  }
+
+  .btn.warm.small {
+    @apply outline-warm-button #{!important};
+  }
+
   /* .btn.tour-auxiliary {
     @apply opacity-75 #{!important};
   } */

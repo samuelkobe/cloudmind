@@ -77,6 +77,12 @@ if ( ! empty( $block['align'] ) ) {
 			$icon_colour = 'fill-white';
 			$button_style = 'alt';
 			break;
+		case 'warm':
+			$background_colour = 'bg-warm';
+			$heading_colour = 'text-dark';
+			$content_colour = 'text-warm-text';
+			$border_colour = 'border-b-warm-text';
+			break;
 		case 'white':
 			$background_colour = 'bg-white';
 			$heading_colour = 'text-dark';

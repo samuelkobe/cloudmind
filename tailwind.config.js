@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./**/*.php", "./**/*.css"],
+  content: ["./**/*.php", "./src/**/*.css"],
   theme: {
     extend: {
       aspectRatio: {
@@ -22,6 +22,10 @@ module.exports = {
         dark: "#201910",
         "dark-gray": "#2c2c2c",
         "light-gray": "#555555",
+        warm: "#dddbd3",
+        "warm-card": "#ebe5d8",
+        "warm-button": "#cbab5c",
+        "warm-text": "#5a5040",
       },
       fontFamily: {
         main: ["Lato", "Verdana", "sans-serif"],

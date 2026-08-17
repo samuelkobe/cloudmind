@@ -59,12 +59,16 @@ function webok_enqueue_editor_assets($theme_dir) {
     
     wp_enqueue_style(
         'webok-all-styles',
-        get_stylesheet_directory_uri() . '/style.css'
+        get_stylesheet_directory_uri() . '/style.css',
+        array(),
+        filemtime( get_template_directory() . '/style.css' )
     );
 
     wp_enqueue_style(
         'webok-editor-styles',
-        get_stylesheet_directory_uri() . '/style-editor.css'
+        get_stylesheet_directory_uri() . '/style-editor.css',
+        array(),
+        filemtime( get_template_directory() . '/style-editor.css' )
     );
 }
 add_action( 'enqueue_block_editor_assets', 'webok_enqueue_editor_assets' );
@@ -86,6 +90,8 @@ function register_acf_blocks() {
     __DIR__ . '/blocks/pricing-set',
     __DIR__ . '/blocks/testimonials',
     __DIR__ . '/blocks/partners',
+    __DIR__ . '/blocks/three-cards',
+    __DIR__ . '/blocks/side-by-side',
   ];
 
   foreach ($blocks as $block_path) {
@@ -128,7 +134,7 @@ function footer_scripts()
 /* ####### Load styles ####### */
 function styles_sheet()
 {
-    wp_register_style('web-ok-starter-styles', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
+    wp_register_style('web-ok-starter-styles', get_template_directory_uri() . '/style.css', array(), filemtime( get_template_directory() . '/style.css' ), 'all');
     wp_enqueue_style('web-ok-starter-styles'); // Enqueue
 
     wp_register_style('block-styles', get_template_directory_uri() . '/blocks/flexible-content/flexible-content.css', array(), '1.0.0', 'all');
@@ -577,3 +583,5 @@ function rename_post_taxonomy_labels() {
     }
 }
 add_action( 'init', 'rename_post_taxonomy_labels', 11 );
+
+add_filter( 'wpcf7_autop_or_not', '__return_false' );

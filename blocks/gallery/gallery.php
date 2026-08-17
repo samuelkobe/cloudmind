@@ -59,6 +59,9 @@ if ( ! empty($block['anchor'] ) ) {
 		case 'dark':
 			$background_colour = 'bg-dark-gray';
 			break;
+		case 'warm':
+			$background_colour = 'bg-warm';
+			break;
 		case 'white':
 			$background_colour = 'bg-white';
 			break;

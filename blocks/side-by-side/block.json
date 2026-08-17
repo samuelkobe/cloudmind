@@ -1,0 +1,16 @@
+{
+  "name": "acf/side-by-side",
+  "title": "Side by Side",
+  "description": "Two side-by-side cards, each with a title, subtitle, content, button, and optional testimonial.",
+  "style": ["file:./side-by-side.css"],
+  "category": "formatting",
+  "icon": "columns",
+  "keywords": ["cards", "columns", "side by side", "two", "webok"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "side-by-side.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

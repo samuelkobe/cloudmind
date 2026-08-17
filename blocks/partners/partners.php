@@ -72,6 +72,10 @@ if ( ! empty( $block['align'] ) ) {
 			$image_background_colour = 'bg-white';
 			$text_colour = 'text-white';
 			break;
+		case 'warm':
+			$background_colour = 'bg-warm';
+			$text_colour = 'text-warm-text';
+			break;
 		case 'white':
 			$background_colour = 'bg-white';
 			break;
